@@ -5,7 +5,7 @@
 #RUN apt-get -y install ruby rake
 #RUN gem install --no-rdoc --no-ri rspec ci_reporter_rspec
 
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER alfie
 ENV REFRESHED_AT 2014-06-01
 RUN apt-get update && apt-get -yqq install wget curl gnupg2 libcurl3 build-essential redis-tools \
